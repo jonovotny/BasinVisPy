@@ -25,3 +25,7 @@ By removing the requirement for Matlab (TM) and relying entirely on Python our t
   * "subdata (cellrange)" is a helper function that allows you to select in which cells the input well data for backstripping are located.
 * The core functionality is provided by xlwings via the "Subsidence" macro. Rather than a simple cell calculation, this will build a interactive spreadsheet calculating tectonic and total subsidence based on your selected "subdata" cells. You can execute the macro by enabling the developer tab (instructions here), hitting Alt + F8 to open the macro window, selecting Subsidence and clicking run.
   * Depending on the amount of units, this might take a while. The console window provides completion progress bar.
+
+# Installation Guide (Windows, Libre Office)
+
+* We are currently working on also providing the Excel functionalities in the LibreOffice suite. This work is pending.
