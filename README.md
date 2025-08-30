@@ -20,8 +20,8 @@ By removing the requirement for Matlab (TM) and relying entirely on Python our t
 * To start a project, copy the "BasinVis-example.xlsm" file and the "BasinVis.py" file into a new directory.
 * You may rename the spreadsheet file, as long as you keep the xlsm file ending. "BasinVis.py" needs to keep the same filename and stay in the same directory as the spreadsheet for the scripts to work.
 * Inside the Spreadsheet there are currently two functionalities available.
-  * "decomp( phi_0, c, top_p, bottom_p, top_decomp)" is a new formula, that performs decompaction based on the following parameters:
+  * "@decomp( phi_0, c, top_p, bottom_p, top_decomp)" is a new formula that performs decompaction based on the following parameters:
     (Initial porosity, Coefficient c, Present top depth, Present bottom depth, Decompacted top depth)
   * "subdata (cellrange)" is a helper function that allows you to select in which cells the input well data for backstripping are located.
-* The core functionality is provided by xlwings "run main" option. Rather than a simple cell calculation, this will build a interactive spreadsheet calculating tectonic and total subsidence based on your selected "subdata" cells.
+* The core functionality is provided by xlwings via the "Subsidence" macro. Rather than a simple cell calculation, this will build a interactive spreadsheet calculating tectonic and total subsidence based on your selected "subdata" cells. You can execute the macro by enabling the developer tab (instructions here), hitting Alt + F8 to open the macro window, selecting Subsidence and clicking run.
   * Depending on the amount of units, this might take a while. The console window provides completion progress bar.
